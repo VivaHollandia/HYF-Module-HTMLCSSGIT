@@ -1,0 +1,82 @@
+body{
+  background-color:white;
+  font-family: Arial, sans-serif;
+  font-style: oblique
+
+}
+img{
+  height: 250px;
+  width: 200px;
+  margin-top: 7%;
+  /* border-radius: 50%; */
+  box-shadow: 5px 5px 15px 5px #d1cccc;
+ 
+}
+header{
+  background-color:rgb(153, 161, 209);
+  width: 100%;
+  height: 20%;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  /* align-items: center; */
+  /* display: block; */
+  border-bottom: rgb(88, 126, 230) solid 30px;
+  color: #fff;
+  
+}
+h1{
+  text-align: center;
+}
+h2{
+  margin-top: 10%;
+    /* line-height: 50px; */
+    text-align: center;
+  
+}
+.icon{
+  height: 50px;
+  width: 50px;
+  margin-top: 7%;
+  margin-left: 7%;
+  border-radius: 4px;
+
+}
+.sec-1{
+text-align: center;
+margin-top: 2%;
+}
+.main-sec{
+  display: flex;
+  justify-content:space-between;
+  border:black  solid 2px;
+  height: 100vh;
+  height: 100vh;
+  text-align: left;
+}
+.main-sec h1{
+  color: #587EE6;
+  text-align: left;
+}
+
+.left{
+  width: 50%;
+  border: black  solid 2px;
+  
+}
+
+.right{
+width: 50%;
+border: black  solid 2px; 
+}
+ul {
+  list-style: none; /* Removes the default bullets */
+   font-size: 22px; /* increases the bullet size, list-item font size */
+}
+
+ul li::before {
+  content : "\2022"; /* Adds the bullet */
+  padding-right: 10px; /* creates the space between bullet, list item */
+  color: blue; /* changes the bullet color*/
+}
