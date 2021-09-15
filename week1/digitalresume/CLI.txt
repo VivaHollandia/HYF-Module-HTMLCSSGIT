@@ -1,0 +1,23 @@
+Answer 1: you can create a hidden file by command (on Mac)
+
+touch .testfile.txt 
+
+and type 
+
+ls -a 
+
+to show the hidden file. 
+
+
+Answer 2: I  would use mkdir -p command 
+
+For example：  mkdir -p dir1/dir2/dir3
+
+
+Answer 3: 
+
+For example : sed '$ s/$/abc/' file.txt >file.txt.new && mv file.txt.new file.txt
+
+              first message
+              second message
+              abc
