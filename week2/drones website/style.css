@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "Open Sans";
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*---- Mobile first ----*/
+body {
+  background-color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+
+}
+
+h1,
+h2 {
+  margin: 20px 0 0px 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 10px 17px 24px 3px rgba(154,159,217,0.75);
+
+}
+
+
+h1 {
+  margin: 15px 5px; 
+  padding: 10px 20px;
+  text-align: center;
+  background-color: rgb(177, 123, 79);
+  color: whitesmoke;
+}
+
+h3 {
+  margin: 0px 0px;
+  text-align: center;
+  background-color: rgb(108, 108, 165);
+  color: whitesmoke;
+  vertical-align: middle;
+  border-radius: 10px;
+  line-height: 3em;
+  padding: 0 5px;
+  overflow: scroll;
+}
+
+p {
+  margin: 10px 0px;
+  padding: 5px 15px;
+}
+
+/*-------- clearfix -----*/
+
+.grid-floats:after {
+  content: ""; 
+  clear: both;
+  display: block;
+}
+
+.grid-item {
+  padding: 0;
+  list-style-type: none;
+  margin: 20px 1.15%;
+  background-color: #ddd3d3;
+  transition: box-shadow 0.3s;
+  transition: transform 0.4s;
+  border-radius: 10px;
+  box-shadow: 10px 17px 24px 3px rgba(154,159,217,0.75);
+
+  
+}
+
+.grid-item:hover {
+  box-shadow: 0px 5px 10px #777;
+  transform: scale(1.05);
+}
+
+.grid-item:nth-of-type(2) {
+  text-align: right;
+}
+
+img {
+  max-width: 100%;
+  padding: 10px 0px;
+  display: block;
+  background-color: #fff;
+}
+
+/*------------------Tablets ----------------------*/
+@media screen and (min-width: 600px) {
+  h3 {
+    height: 3em;
+  }
+  .grid-item {
+    width: 31%;
+    height: 490px;
+  }
+
+  /* Float grid */
+  .grid-floats .grid-item {
+    float: left;
+  }
+
+  .grid-floats li:first-of-type,
+  .grid-floats li:nth-of-type(2) {
+    width: 47.7%;
+  }
+
+  /* Flex grid */
+
+  section {
+    clear: left;
+  }
+  .grid-flex {
+    display: flex;
+    clear: left;
+    flex-wrap: wrap;
+  }
+}
+
+/*--- Desktop ---*/
+
+@media screen and (min-width: 1024px) {
+  .grid-item {
+    width: 22.7%;
+    height: 600px;
+  }
+
+  /*--- Float grid ---*/
+
+  .grid-floats li:first-of-type {
+    max-width: 46%;
+  }
+
+  .grid-floats li:nth-of-type(2) {
+    max-width: 23%;
+  }
+}
