@@ -1,8 +1,6 @@
 
 body{
-  background-image: url(https://qph.fs.quoracdn.net/main-qimg-efbd1fe9111c6e3fb4f01408cb894a3d);
-  /* background-image: url(https://thumbs.dreamstime.com/b/full-stack-development-concept-cell-background-d-full-stack-development-concept-cell-background-d-illustration-219400995.jpg); */
-  background-position: center;
+  background-image: url(images/bg-img.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
